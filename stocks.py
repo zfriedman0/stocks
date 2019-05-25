@@ -1,4 +1,4 @@
-#taken from https://pythonprogramming.net/getting-stock-prices-python-programming-for-finance/
+#created by Zach Friedman with help from https://pythonprogramming.net/getting-stock-prices-python-programming-for-finance/
 
 import datetime as dt
 import matplotlib.pyplot as plt
@@ -11,6 +11,13 @@ style.use('ggplot')
 start = dt.datetime(2000, 1, 1)
 end = dt.datetime.now()
 
-df = web.DataReader('TSLA', 'yahoo', start, end)
+df1 = web.DataReader('VOO', 'yahoo', start, end)
+df2 = web.DataReader('AAPL', 'yahoo', start, end)
+df3 = web.DataReader('AMZN', 'yahoo', start, end)
 
-print(df.head())
+print("\nVOO - Vanguard S&P 500 ETF")
+print(df1.tail())
+print("\nAAPL - Apple Inc.")
+print(df2.tail())
+print("\nAMZN - Amazon Inc.")
+print(df3.tail())
