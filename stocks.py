@@ -1,3 +1,5 @@
+#taken from https://pythonprogramming.net/getting-stock-prices-python-programming-for-finance/
+
 import datetime as dt
 import matplotlib.pyplot as plt
 from matplotlib import style
